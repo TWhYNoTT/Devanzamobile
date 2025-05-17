@@ -1,0 +1,72 @@
+Migration from React Native CLI to Expo
+1. Overview
+Goal: Migrate the project from React Native CLI to Expo, focusing exclusively on the UI/UX while ensuring compatibility with Expo.
+Expo App Setup: Created using npx create-expo-app@latest --template blank-typescript.
+2. Migration Considerations
+Convert all code to functional components.
+Migrate to TypeScript for type safety.
+Use the latest versions of all libraries and packages.
+Follow best practices in development.
+Ensure compatibility with Expo for all libraries and packages:
+Heavily prioritize Expo-compatible packages.
+Use alternatives if a package is incompatible with Expo.
+Replace outdated or deprecated packages with updated, supported alternatives.
+Always use the latest version of Expo.
+Replace functionality that rely on APIs or servers with dummy data and simulated behavior.
+
+dont Remove any functionality related to:
+dont remove translate functionality.
+dont remove validation functionality.
+dont remove utility functions.
+
+
+3. Handling Incompatible or Unsupported Features
+Packages:
+If a package is incompatible with Expo, use an Expo-compatible package or find an alternative.
+Remove deprecated packages and replace them with supported, compatible ones.
+Replace packages and functionality that rely on APIs or servers with dummy data and simulated behavior.
+
+UI/UX Components:
+Use Expo-compatible layout components instead of React Native layout components.
+
+
+
+
+4. State Management
+Do not use Redux, Redux Toolkit, or reducers.
+Avoid using Saga and any related middleware.
+Instead, use local state management (e.g., React’s useState and useReducer hooks).
+5. Structure and Naming
+Retain the existing project structure and naming conventions.
+6. Preferred Libraries
+Core Packages to Use:
+expo-status-bar
+expo-haptics
+react-native-safe-area-context
+react-native-size-matters
+@react-navigation/native
+react-native-reanimated-carousel
+expo-firebase-core
+expo-notifications
+expo-blur
+expo-localization
+expo-image
+react-native-elements
+luxon
+@gorhom/bottom-sheet
+react-native-reanimated
+expo-location
+react-native-paper
+react-native-gesture-handler
+Replace unsupported packages with Expo-compatible alternatives.
+
+dont remove utils are you understand
+
+
+
+expected errors and its solutions
+
+(NOBRIDGE) ERROR  Warning: Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+Check the render method of Browse.
+
+The issue might be with the HeaderImageScrollView package. For Expo projects, I recommend replacing it with a custom implementation using ScrollView and Animated. 

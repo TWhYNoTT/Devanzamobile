@@ -1,0 +1,23 @@
+{
+  "name": "rn-animated-progress-circle",
+  "version": "1.0.0",
+  "description": "rn-animated-progress-circle",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:simonsteer/rn-animated-progress-circle.git"
+  },
+  "keywords": [
+    "react",
+    "react native",
+    "progress-circle",
+    "circle",
+    "progress",
+    "animated-progress-circle"
+  ],
+  "author": "simonsteer",
+  "license": "MIT",
+  "devDependencies": {},
+  "peerDependencies": {}
+}

@@ -1,0 +1,36 @@
+-i'm migrating from react native cli to expo.
+-i already create expo app using 
+npx create-expo-app@latest --template blank-typescript 
+-Things we take into consideration during migrating
+.convert code to functional component.
+.convert to typescript.
+.use the packages latest version.
+.use the best practices.
+.use expo compatible packages.
+.Ensure that the libraries or packages you're using are compatible with Expo(focus on this havily).
+.Use the latest version of Expo.
+.if the package is not compatible with expo, use the compatible package.
+.if the package is outdated, use the latest version.
+.if the package is deprecated, use the latest version.
+.if the package is not more supported with expo, use the supported package.
+.if the package is not supported with expo, use the supported package.
+.if the package is not supported with expo, use the alternative supported package.
+.please check the packages if they are Expo-compatible,if not use the compatible package or alternative package.
+.remove any functionality that is not supported by Expo and use the alternative functionality.
+.remove any functionality that relates to api and server.
+.remove any functionality that need out factors or external factors to work.
+.use dummy data for the components that are using api and server.
+.dont use store and redux and redux-toolkit use state management instead.
+.i want to migrate the UI/UX only not the functionality(like api,server,store,redux,redux-toolkit,reducers,etc).
+.remove saga and any thing related to saga.
+.use the expo layout compatible components instead of the react native layout components.
+.if the component is not supported by expo, use the alternative component or rewrite the component in the right way compatible with expo.
+.i want you to use the same structure and names.
+.in the head of our goal, use alternatives for the packages that are not supported by expo.
+we should use:
+expo-status-bar
+expo-haptics
+react-native-safe-area-context
+react-native-size-matters
+@react-navigation/native
+react-native-reanimated-carousel
